@@ -1,0 +1,9 @@
+project: savantenvs/pkg
+target: annotation
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/annotation/testsuite
+
+cmds:
+  - cmd: /mayhem/fuzz_annotation
+    libfuzzer: true

@@ -1,0 +1,3 @@
+version = 2;
+extra = { foo = "yes"; };
+extra = { bar = 123; };

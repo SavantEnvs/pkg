@@ -1,0 +1,9 @@
+project: savantenvs/pkg
+target: pkg
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/pkg/testsuite
+
+cmds:
+  - cmd: /mayhem/pkg-afl -o PKG_DBDIR=/tmp/pkgdb info -R -F @@
+    afl: true

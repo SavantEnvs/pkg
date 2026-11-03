@@ -1,0 +1,9 @@
+project: savantenvs/pkg
+target: plist
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/plist/testsuite
+
+cmds:
+  - cmd: /mayhem/fuzz_plist
+    libfuzzer: true

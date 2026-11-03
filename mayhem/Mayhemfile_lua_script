@@ -1,0 +1,9 @@
+project: savantenvs/pkg
+target: lua-script
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/lua-script/testsuite
+
+cmds:
+  - cmd: /mayhem/fuzz_lua_script
+    libfuzzer: true

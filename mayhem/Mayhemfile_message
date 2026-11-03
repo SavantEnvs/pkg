@@ -1,0 +1,9 @@
+project: savantenvs/pkg
+target: message
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/message/testsuite
+
+cmds:
+  - cmd: /mayhem/fuzz_message
+    libfuzzer: true

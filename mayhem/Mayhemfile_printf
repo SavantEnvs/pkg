@@ -1,0 +1,6 @@
+project: savantenvs/pkg
+target: printf
+
+cmds:
+  - cmd: /mayhem/fuzz_printf
+    libfuzzer: true

@@ -1,0 +1,9 @@
+project: savantenvs/pkg
+target: manifest
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/manifest/testsuite
+
+cmds:
+  - cmd: /mayhem/fuzz_manifest
+    libfuzzer: true

@@ -1,0 +1,9 @@
+project: savantenvs/pkg
+target: abi
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/abi/testsuite
+
+cmds:
+  - cmd: /mayhem/fuzz_abi
+    libfuzzer: true

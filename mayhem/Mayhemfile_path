@@ -1,0 +1,6 @@
+project: savantenvs/pkg
+target: path
+
+cmds:
+  - cmd: /mayhem/fuzz_path
+    libfuzzer: true
