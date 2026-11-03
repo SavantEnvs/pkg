@@ -1,0 +1,1 @@
+{"version":2,"packing_format":"tzst","manifests":"packagesite.yaml","manifests_archive":"packagesite","filesite":"filesite.yaml","filesite_archive":"filesite","digests":"digests","digests_archive":"digests","conflicts":"conflicts","conflicts_archive":"conflicts","maintainer":"a@b.c","source":"http://x.y","source_identifier":"abc"}

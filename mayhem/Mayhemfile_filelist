@@ -1,0 +1,6 @@
+project: savantenvs/pkg
+target: filelist
+
+cmds:
+  - cmd: /mayhem/fuzz_filelist
+    libfuzzer: true

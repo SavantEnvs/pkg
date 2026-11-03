@@ -1,0 +1,9 @@
+project: savantenvs/pkg
+target: text-diff
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/text-diff/testsuite
+
+cmds:
+  - cmd: /mayhem/fuzz_text_diff
+    libfuzzer: true

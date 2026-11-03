@@ -1,0 +1,5 @@
+@cwd /usr/local
+bin/hello
+@dir share/hello
+@mode 0644
+share/hello/README

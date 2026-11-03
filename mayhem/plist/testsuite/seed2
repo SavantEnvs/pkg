@@ -1,0 +1,12 @@
+@name hello-1.0
+@owner root
+@group wheel
+@mode 0755
+@comment note
+@cwd /usr/local
+bin/hello
+@mode
+@dir share/hello
+share/hello/README
+@var X y
+@cwd

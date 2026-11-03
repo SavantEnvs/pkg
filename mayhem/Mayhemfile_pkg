@@ -1,0 +1,12 @@
+project: savantenvs/pkg
+target: pkg
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/pkg/testsuite
+
+cmds:
+  - cmd: /mayhem/pkg-afl -o PKG_DBDIR=/tmp/pkgdb info -R -F @@
+    afl: true
+    # 44 MB ASan binary linking 20 shared libs: the first exec on a cold worker exceeded the default 2 s
+    # (regression-testing sanity check on "A"); warm it runs in ~15 ms.
+    timeout: 10

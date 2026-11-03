@@ -1,0 +1,9 @@
+project: savantenvs/pkg
+target: trigger
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/trigger/testsuite
+
+cmds:
+  - cmd: /mayhem/fuzz_trigger
+    libfuzzer: true
